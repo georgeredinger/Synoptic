@@ -1,6 +1,5 @@
 set :application, "Synoptic"
 
-
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
@@ -55,7 +54,6 @@ set :repository,  "git@github.com:georgeredinger/synoptic.git"
  set :deploy_to, applicationdir
 
  set :deploy_via, :remote_cache
-
   
 
  # roles (servers)

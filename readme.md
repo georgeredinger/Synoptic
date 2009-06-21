@@ -20,10 +20,6 @@ To generate `session.secret`, visit your app current directory on your server an
 
 rake --silent secret > /path/to/app/shared/config/session.secret
 
-environment.rb:
-
-ExceptionNotifier.sender_address       = %("Pharm bug" <info@iridesco.com>)
-ExceptionNotifier.exception_recipients = %w(shawn@iridesco.com barry@iridesco.com)
 
 ### Dreamhost Installation
 
@@ -55,11 +51,7 @@ o If this doesn't work for you (new changes aren't getting deployed), change:
 set :deploy_via, :remote_cache
 In deploy.rb to:
 set :deploy_via, :copy
-It'll be slow, but at least it should work.
-* Visit http://yourdomain.tld/admin to add a picture. Then http://yourdomain.tld will work!
 
-TODO: Instructions for remote cache deploy working
-TODO: Can we make a simple drag and drop FTP deploy?
 
 ### Sample capistrano `deploy.rb`
 
