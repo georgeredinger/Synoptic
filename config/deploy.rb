@@ -1,14 +1,13 @@
-set :application, "set your application name here"
-set :repository,  "set your repository location here"
+set :application, "Synoptic"
+
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
+ set :deploy_to, "synoptic.dressageinsight.com"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
-# set :scm, :subversion
 
 role :app, "your app-server here"
 role :web, "your web-server here"
@@ -26,8 +25,8 @@ role :db,  "your db-server here", :primary => true
 
  default_run_options[:pty] = true
 
- set :repository, "git@github.com:username/your-repo.git" #GitHub clone URL
 
+set :repository,  "git@github.com:georgeredinger/synoptic.git"
  set :scm, "git"
 
  set :scm_passphrase, "pa$$w0rd" #This is the passphrase for the ssh key on the server deployed to
@@ -40,15 +39,14 @@ role :db,  "your db-server here", :primary => true
 
  set :user, 'username' #Dreamhost username
 
- set :domain, 'server.dreamhost.com' # Dreamhost servername where your account is located
+ set :domain, 'synoptic.dressageinsight.com'  # Dreamhost servername where your account is located
 
- set :project, 'projectname' # Your application as its called in the repository
+ set :project, 'synoptic' # Your application as its called in the repository
 
- set :application, 'sub.domain.com' # Your app's location (domain or sub-domain name as setup in panel)
+ set :application, 'synoptic.dressageinsight.com' # Your app's location (domain or sub-domain name as setup in panel)
 
  set :applicationdir, "/home/#{user}/#{application}" # The standard Dreamhost setup
 
-  
 
  # Don't change this stuff, but you may want to set shared files at the end of the file ##################
 
