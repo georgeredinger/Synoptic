@@ -25,7 +25,7 @@ role :db,  "synoptic.dressageinsight.com", :primary => true
  default_run_options[:pty] = true
 
 
-set :repository,  "git@github.com:georgeredinger/synoptic.git"
+set :repository,  "git@github.com:georgeredinger/Synoptic.git"
  set :scm, "git"
 
  set :scm_passphrase, "pa$$w0rd" #This is the passphrase for the ssh key on the server deployed to
@@ -40,7 +40,7 @@ set :repository,  "git@github.com:georgeredinger/synoptic.git"
 
  set :domain, 'synoptic.dressageinsight.com'  # Dreamhost servername where your account is located
 
- set :project, 'synoptic' # Your application as its called in the repository
+ set :project, 'Synoptic' # Your application as its called in the repository
 
  set :application, 'synoptic.dressageinsight.com' # Your app's location (domain or sub-domain name as setup in panel)
 
