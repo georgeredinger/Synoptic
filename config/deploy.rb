@@ -72,7 +72,7 @@ set :repository,  "git@github.com:georgeredinger/Synoptic.git"
 
  run "ln -s #{shared_path}/database.yml #{release_path}/config"
 
- run "ln -s #{shared_path}/environment.rb #{release_path}/config"
+# run "ln -s #{shared_path}/environment.rb #{release_path}/config"
 
  end
 
