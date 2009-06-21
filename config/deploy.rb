@@ -8,9 +8,9 @@ set :application, "Synoptic"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 
-role :app, "your app-server here"
-role :web, "your web-server here"
-role :db,  "your db-server here", :primary => true
+role :app, "synoptic.dressageinsight.com"
+role :web, "synoptic.dressageinsight.com"
+role :db,  "synoptic.dressageinsight.com", :primary => true
 
  ############################
 
