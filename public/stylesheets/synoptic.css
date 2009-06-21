@@ -1,18 +1,19 @@
-
 * { padding: 0; margin: 0; }
-
 body {
  font-family: Verdana, Arial, Helvetica, sans-serif;
  font-size: 13px;
 }
-
 p {
  padding: 10px;
+ margin: 5px 0 5px 5px;
 }
 
 
+ul {
+      margin: 10px 0 5px 20px;
+    }
+  
 #wrapper { 
- //margin: 0 auto;
  width: 100%;
 }
 
@@ -36,7 +37,7 @@ overflow: scroll;
 
 #footer { 
  width: 100%;
- height: 25px;
+ height: 35px;
  clear: both;
  color: #333;
  background: #6B6659;
@@ -45,7 +46,7 @@ overflow: scroll;
 #navigation {
  float: left;
  width: 100%;
- height: 25px;
+ height: 45px;
  color: #333;
  background: #8AA1B6;
 }

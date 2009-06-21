@@ -4,6 +4,9 @@ A synoptic identification application that uses open data for identification key
 
 ### Installation
 
+Rails 2.2.2
+Phusion Passenger
+
 These instructions taken from http://github.com/iridesco/pharm/tree/master
 So, may not be exactly right 
 
@@ -47,10 +50,11 @@ rake --silent secret > /path/to/app/shared/config/session.secret
 * Back on your local machine
 - cap deploy:setup
 - cap deploy:migrations
-o If this doesn't work for you (new changes aren't getting deployed), change:
 set :deploy_via, :remote_cache
 In deploy.rb to:
 set :deploy_via, :copy
+
+I would like :remote_cache to work, but I don't know how... 
 
 
 ### Sample capistrano `deploy.rb`
