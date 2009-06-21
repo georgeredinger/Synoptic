@@ -31,7 +31,8 @@ set :repository,  "git@github.com:georgeredinger/Synoptic.git"
 
  set :deploy_to, applicationdir
 
- set :deploy_via, :remote_cache
+ set :deploy_via,:copy
+   #:remote_cache
 
  # roles (servers)
  role :app, domain
