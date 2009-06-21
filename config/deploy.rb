@@ -36,7 +36,7 @@ set :repository,  "git@github.com:georgeredinger/synoptic.git"
 
  #########################################################################################################
 
- set :user, 'username' #Dreamhost username
+ set :user, 'gredinger' #Dreamhost username
 
  set :domain, 'synoptic.dressageinsight.com'  # Dreamhost servername where your account is located
 
