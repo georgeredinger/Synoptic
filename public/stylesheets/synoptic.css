@@ -22,7 +22,7 @@ ul {
  color: #333;
  background: pink;
  height: 450px;
- width: 815px;
+ width: 810px;
 overflow: scroll;
 
 }
@@ -75,3 +75,8 @@ float: left;
 float: left;
 overflow: scroll;
 }
+
+.ulcheckboxlist ul {
+  list-style-type: none;
+}
+
